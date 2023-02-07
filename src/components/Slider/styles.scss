@@ -1,0 +1,26 @@
+.slider {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 375px) {
+    width: 80%;
+  }
+    &__dots {
+    bottom: 230px;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 32px;
+    padding: 16px;}
+    &__dot {
+      border: 3px solid rgba(196, 196, 196, 0.16);
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      margin-right: 35px;
+    }
+  }

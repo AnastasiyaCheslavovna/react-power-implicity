@@ -1,0 +1,47 @@
+div,
+header,
+nav,
+ul,
+a,
+img,
+li,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dancing";
+  background: linear-gradient(135deg, #fc3f5f, #7d61ff) fixed;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+.wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: #22282e;
+  border-radius: 32px;
+  left: 95px;
+  top: 95px;
+  @media (max-width: 768px) {
+    max-width: 60%;
+  }
+  @media (max-width: 375px) {
+    max-width: 50%;
+  }
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  padding: 130px 260px;
+}

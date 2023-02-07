@@ -1,0 +1,47 @@
+.header {
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 32px 0;
+    align-items: center;
+    justify-self: center;
+    @media (max-width: 768px) {
+      padding: 20px 0;
+    }
+    @media (max-width: 375px) {
+      padding: 15px 0;
+    }
+  }
+  &__logo {
+    justify-self: start;
+    width: 38px;
+    height: 47px;
+    margin-left: 32px;
+  }
+  &__nav {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    &__link {
+      color: rgba(160, 163, 167, 1);
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__btn {
+    display: grid;
+    border: none;
+    border-radius: 50px;
+    justify-self: end;
+    background: linear-gradient(93.22deg, #e1e1e1 8.37%, #ffffff 99.95%);
+    cursor: pointer;
+    padding: 16px 24px;
+    @media (max-width: 768px) {
+      padding: 10px 15px;
+    }
+    @media (max-width: 375px) {
+    }
+    padding: 7px 9px;
+  }
+}
